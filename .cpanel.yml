@@ -3,5 +3,5 @@
 # Copies everything inside public/ (including .htaccess) into this account's web root.
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/
+    - export DEPLOYPATH=/home/sprinklesandsurp/public_html/
     - /bin/cp -R public/. $DEPLOYPATH
