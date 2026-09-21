@@ -1,8 +1,7 @@
 ---
 # cPanel Git Version Control deployment.
-# Copies everything inside public/ (including .htaccess) into the web root.
-# EDIT the DEPLOYPATH line: replace CPANELUSER with the cPanel account's username.
+# Copies everything inside public/ (including .htaccess) into this account's web root.
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/CPANELUSER/public_html/
+    - export DEPLOYPATH=$HOME/public_html/
     - /bin/cp -R public/. $DEPLOYPATH

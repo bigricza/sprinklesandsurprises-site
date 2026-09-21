@@ -20,7 +20,7 @@ public/            ← everything here is the live website (web root)
 
 ## Deploying on cPanel (Git™ Version Control)
 
-1. Edit `.cpanel.yml` and replace `CPANELUSER` with the cPanel username. Commit.
+1. `.cpanel.yml` deploys to `$HOME/public_html`, so no username edit is needed.
 2. In cPanel → **SSH Access** → generate a key (no passphrase), then view the public key.
 3. In GitHub → repo **Settings → Deploy keys** → add that public key (read-only).
 4. In cPanel → **Git™ Version Control** → **Create** → Clone URL
